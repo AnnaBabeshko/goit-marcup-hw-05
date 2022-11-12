@@ -36,10 +36,7 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color, background-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .section {
     padding-top: 94px;
@@ -87,11 +84,8 @@
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
-    color: var(--accent-color);transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
-
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logo-blu:hover,
   .logo-blu:focus {
@@ -103,10 +97,7 @@
     font-size: 26px;
     line-height: calc(31 / 26);
     color: var(--text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logo-header:hover,
   .logo-header:focus {
@@ -117,10 +108,7 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--primari-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .nev-link:hover,
   .nev-link:focus {
@@ -144,10 +132,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .descr-list:hover,
   .descr-list:focus {
@@ -357,10 +342,7 @@
     color: var(--background-color);
     margin-top: 60px;
     margin-bottom: 20px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logo-footer:hover,
   .logo-footer:focus {
@@ -369,10 +351,7 @@
   .kont-link {
     line-height: calc(24 / 14);
     color: var(--background-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .kont-link:hover,
   .kont-link:focus {
@@ -381,10 +360,7 @@
   .kontakt-link {
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .kontakt-link:hover,
   .kontakt-link:focus {
@@ -412,17 +388,11 @@
     border-radius: 50%;
     background-color: rgba(100, 100, 100, 10%);
     color: var(--background-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .foot-color-icon {
     fill: currentColor;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .foot-color-link:hover, .foot-color-icon 
   .foot-color-link:focus .foot-color-icon {
@@ -450,6 +420,7 @@
     color: var(--primari-text-color);
     background-color: var(--discript-background-color);
     padding: 6px 25px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .port-btn:hover,
   .port-btn:focus {
@@ -469,10 +440,7 @@
   }
   .port-link {
     display: block;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: box-shadow ;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .port-link:hover,
   .port-link:focus {
@@ -515,17 +483,11 @@
     color: var(--grey-color);
     /*outline: 2px solid red;
     outline-offset: -2px;*/
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: background-color, color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .socials-icon {
     fill: currentColor;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: background-color, color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .socials-link:hover, .socials-icon 
   .socials-link:focus .socials-icon {
@@ -552,10 +514,7 @@
     width: 170px;
     height: 92px;
     color: var(--grey-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
-    transition-property: background-color, color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .klient-link:hover,
   .klient-link:focus {
