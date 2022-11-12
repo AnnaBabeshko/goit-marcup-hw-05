@@ -572,10 +572,26 @@
     border-radius: 10px;
 
   }
+  .modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .modal-icon {
+    fill: var(--text-color);
+  }
 
-
-
-  
+  v
   
 
 
