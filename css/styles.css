@@ -122,8 +122,12 @@
   .nev-link:focus {
     color: var(--accent-color);
   }
-  .nev-link.link.current {
+  .current {
     color: var(--accent-color);
+    content: "";
+  }
+  .nev-link.current::after {
+    opacity: 1;
   }
   .nev-link::after {
     content: "";
@@ -293,22 +297,20 @@
   .photo {
     position: relative;
   }
-  .overlay {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgba(47, 48, 58, 0.8);
-    backdrop-filter: blur(2px);
-  }
   .overlay-text {
     color: var(--background-color);
-    text-align: center;
-    font-size: 14px;
-    line-height: (16/14);
-    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.14;
     text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /*------------------WORK------------------*/
   .work {
@@ -419,7 +421,6 @@
   }
   .foot-color-icon {
     fill: currentColor;
-    transition: background-color var(--anim-fast);
   }
   .foot-color-link:hover, .foot-color-icon 
   .foot-color-link:focus .foot-color-icon {
@@ -447,7 +448,7 @@
     color: var(--primari-text-color);
     background-color: var(--discript-background-color);
     padding: 6px 25px;
-    transition: box-shadow var(--anim-fast);
+    transition: box-shadow var(--anim-fast), color var(--anim-fast), background-color var() ;
   }
   .port-btn:hover,
   .port-btn:focus {
@@ -498,8 +499,8 @@
     display: block;
     transition: box-shadow var(--anim-fast);
   }
-  .port-link:hover,
-  .port-link:focus {
+  .port-link:hover, .port-overlay
+  .port-link:focus .port-overlay {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .cart-cont {
@@ -543,7 +544,6 @@
   }
   .socials-icon {
     fill: currentColor;
-    transition: color var(--anim-fast), background-color var(--anim-fast);
   }
   .socials-link:hover, .socials-icon 
   .socials-link:focus .socials-icon {
@@ -570,7 +570,7 @@
     width: 170px;
     height: 92px;
     color: var(--grey-color);
-    transition: color var(--anim-fast), background-color var(--anim-fast);
+    transition: color var(--anim-fast);
   }
   .klient-link:hover,
   .klient-link:focus {
