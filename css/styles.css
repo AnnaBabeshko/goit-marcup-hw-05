@@ -466,9 +466,9 @@
   .port-list-item {
     width: 370px;
   }
-  .port-link:hover, .port-overlay
+  .port-link:hover .port-overlay, 
   .port-link:focus .port-overlay {
-    transform: translateY(0);
+    transform: translate(0);
   }
   .port-thumb {
     position: relative;
@@ -493,7 +493,7 @@
   .port-overlay-text {
     color: var(--background-color);
     font-size: 18px;
-    line-height: (28/18);
+    line-height: calc(28 / 18);
     letter-spacing: 0.03em;
   }
   .port-link {
